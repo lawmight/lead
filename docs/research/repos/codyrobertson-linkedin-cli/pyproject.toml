@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linkedin-discovery-cli"
+version = "0.1.0"
+description = "Unofficial LinkedIn discovery and automation CLI with session-based auth, workflow tooling, and a ranked prospect queue"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+authors = []
+keywords = ["linkedin", "cli", "voyager", "automation", "discovery", "prospecting"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Utilities",
+]
+
+dependencies = [
+    "duckdb>=1.5",
+    "numpy>=2.0",
+    "requests>=2.28",
+    "beautifulsoup4>=4.11",
+]
+
+[project.optional-dependencies]
+lxml = ["lxml>=4.9"]
+browser = ["playwright>=1.40"]
+semantic = ["fastembed>=0.8.0"]
+ann = ["hnswlib>=0.8"]
+qwen = [
+    "accelerate>=1.0",
+    "datasets>=3.0",
+    "modal>=0.73",
+    "peft>=0.13",
+    "transformers>=4.45",
+    "trl>=0.11",
+    "wandb>=0.18",
+]
+dev = [
+    "build>=1.2",
+    "pytest>=7.0",
+    "pytest-cov",
+]
+
+[project.scripts]
+linkedin = "linkedin_cli.cli:main"
+linkedin-mcp = "linkedin_cli.mcp_server:main"
+
+[project.urls]
+Homepage = "https://github.com/codyrobertson/linkedin-cli"
+Repository = "https://github.com/codyrobertson/linkedin-cli"
+Issues = "https://github.com/codyrobertson/linkedin-cli/issues"
+Releases = "https://github.com/codyrobertson/linkedin-cli/releases"
+
+[tool.setuptools.packages.find]
+include = ["linkedin_cli*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

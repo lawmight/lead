@@ -1,0 +1,38 @@
+{
+  "name": "linkedin-mcp",
+  "version": "0.1.0",
+  "description": "Unofficial MCP server for LinkedIn — exposes the in-browser Voyager API as a set of tools, so any MCP client (Claude Code, Cursor, Claude Desktop) can run profile lookups, connections, DMs, posts, and comments through your own logged-in Chrome session. No third-party API keys, no per-seat fees, undetectable because requests come from real Chrome with your real cookies. Not affiliated with LinkedIn or Microsoft.",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "linkedin-mcp": "dist/server.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "linkedin",
+    "voyager",
+    "playwright",
+    "automation",
+    "model-context-protocol"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "playwright": "^1.49.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
