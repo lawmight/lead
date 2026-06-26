@@ -1134,6 +1134,31 @@ SN Search      →  AI Enricher      →  Outreach        →  Google Sheets
 
 ---
 
+## OSS Implementation Reference (local clones)
+
+PhantomBuster phantoms are closed-source, but equivalent **access patterns** are implemented in open-source repos cloned at `docs/research/repos/`. Use these when building your own automations.
+
+| PhantomBuster automation | OSS equivalent (local path) | Access technique |
+|--------------------------|----------------------------|------------------|
+| LinkedIn Search Export | `repos/linkedin-api/`, `repos/linkedin_scraper/` | Voyager `/search/blended` or DOM search pagination |
+| LinkedIn Profile Scraper | `repos/linkedin-api/`, `repos/LinkedInDumper/`, `repos/linkedin_scraper/` | Voyager `profileView` / dash GraphQL / DOM |
+| Sales Navigator Search Export | `repos/linvo-scraper/`, `repos/linkedin-scraping-tools/` | JSON interception + SN DOM selectors |
+| LinkedIn Auto Connect | `repos/linkedin-mcp/`, `repos/codyrobertson-linkedin-cli/` | `POST /voyagerRelationshipsDashMemberRelationships` |
+| LinkedIn Message Sender | `repos/eracle-linkedin-cli/`, `repos/linkedin-api/` | Messaging GraphQL / REST conversations |
+| LinkedIn Inbox Scraper | `repos/linkedin-api/`, `repos/linvo-scraper/` | `/messaging/conversations` or message UI selectors |
+| LinkedIn Post Commenters Export | `repos/codyrobertson-linkedin-cli/` | `voyagerSocialDashComments` GraphQL |
+| LinkedIn Company Employees Export | `repos/LinkedInDumper/` | `/search/dash/clusters` company employee search |
+| LinkedIn Activity Extractor | `repos/linkedin-api/` | `/feed/updates` Voyager endpoint |
+| Full outreach daemon | `repos/OpenOutreach/` | Playwright + Voyager hybrid with rate limits |
+| Session / cookie handling | `repos/linkedin-mcp-server/` | Chrome cookie DB decrypt + Playwright profile |
+| Generic web scrape | `repos/linkedin-profile-scraper-api/` | Puppeteer pattern (reference architecture) |
+
+See [linkedin-oss-data-access-map.md](linkedin-oss-data-access-map.md) for endpoint maps, auth patterns, and anti-bot notes.
+
+Re-clone all repos: `bash scripts/clone_linkedin_oss_repos.sh`
+
+---
+
 ## Product Strategy Observations
 
 1. **LinkedIn dominance (51/151 = 34%)** — Core product is LinkedIn B2B sales automation.

@@ -4,6 +4,35 @@
 
 ---
 
+## Local clones (this workspace)
+
+All **14 repositories** below are cloned into `docs/research/repos/` (~33 MB shallow). Re-clone with:
+
+```bash
+bash scripts/clone_linkedin_oss_repos.sh
+```
+
+| Local path | GitHub | Commit (at clone) | Start here |
+|------------|--------|-------------------|------------|
+| `docs/research/repos/linkedin-api/` | [nsandman/linkedin-api](https://github.com/nsandman/linkedin-api) | `c75a3cb` | `linkedin_api/linkedin.py`, `DOCS.md` |
+| `docs/research/repos/LinkedInDumper/` | [l4rm4nd/LinkedInDumper](https://github.com/l4rm4nd/LinkedInDumper) | `0ded335` | `linkedindumper.py` |
+| `docs/research/repos/linkedin-mcp/` | [Michaelrecycle/linkedin-mcp](https://github.com/Michaelrecycle/linkedin-mcp) | `5449d47` | `src/lib/linkedin.ts` |
+| `docs/research/repos/codyrobertson-linkedin-cli/` | [codyrobertson/linkedin-cli](https://github.com/codyrobertson/linkedin-cli) | `af6484c` | `linkedin_cli/voyager.py` |
+| `docs/research/repos/eracle-linkedin-cli/` | [eracle/linkedin-cli](https://github.com/eracle/linkedin-cli) | `ce01c29` | `src/linkedin_cli/api/voyager.py` |
+| `docs/research/repos/OpenOutreach/` | [eracle/OpenOutreach](https://github.com/eracle/OpenOutreach) | `4e29945` | `openoutreach/`, `tests/api/test_voyager.py` |
+| `docs/research/repos/linkedin_scraper/` | [joeyism/linkedin_scraper](https://github.com/joeyism/linkedin_scraper) | `b1cdc1c` | `linkedin_scraper/core/browser.py` |
+| `docs/research/repos/linkedin-mcp-server/` | [stickerdaniel/linkedin-mcp-server](https://github.com/stickerdaniel/linkedin-mcp-server) | `e63c9aa` | `linkedin_mcp_server/core/browser.py` |
+| `docs/research/repos/linvo-scraper/` | [linvo-io/linvo-scraper](https://github.com/linvo-io/linvo-scraper) | `cfbe910` | `src/linkedin/` (Sales Nav in `linkedin.sales.page.service.ts`) |
+| `docs/research/repos/linkedin-profile-scraper-api/` | [josephlimtech/linkedin-profile-scraper-api](https://github.com/josephlimtech/linkedin-profile-scraper-api) | `9fc7125` | `src/index.ts` |
+| `docs/research/repos/inb/` | [joshiayush/inb](https://github.com/joshiayush/inb) | `5b7a1f3` | `inb/api/client.py` |
+| `docs/research/repos/linkedin-voyager-sdk/` | [trieb-work/linkedin-voyager-sdk](https://github.com/trieb-work/linkedin-voyager-sdk) | `7277cfc` | `src/profile/index.ts` |
+| `docs/research/repos/linkedin-scraping-tools/` | [ArthurVerrez/linkedin-scraping-tools](https://github.com/ArthurVerrez/linkedin-scraping-tools) | `3f8e3f1` | `lksn_search_scraper.py` |
+| `docs/research/repos/scraping-linkedin-salesNavigator/` | [padmanabhan-s/scraping-linkedin-salesNavigator](https://github.com/padmanabhan-s/scraping-linkedin-salesNavigator) | `b9776c9` | `README.md` |
+
+Full manifest with key files: [repos-manifest.json](repos-manifest.json) · Index: [repos/README.md](repos/README.md)
+
+---
+
 ## Executive Summary
 
 Community projects that reverse-engineer LinkedIn data access fall into **three reliability tiers**:
@@ -246,16 +275,16 @@ LinkedIn embeds JSON in page `<code>` tags. linvo-scraper and codyrobertson/link
 
 ## Recommended Starting Points by Use Case
 
-| Goal | Start here |
-|------|-----------|
-| Voyager REST endpoint reference | nsandman/linkedin-api + DOCS.md |
-| Modern dash + GraphQL employee dump | l4rm4nd/LinkedInDumper |
-| In-browser Voyager (most reliable HTTP) | Michaelrecycle/linkedin-mcp or codyrobertson/linkedin-cli |
-| Production Playwright automation | eracle/OpenOutreach + eracle/linkedin-cli |
-| DOM scraping with session mgmt | joeyism/linkedin_scraper v3 |
-| Resilient DOM without selectors | stickerdaniel/linkedin-mcp-server |
-| Sales Navigator JSON interception | linvo-io/linvo-scraper `linkedin.sales.page.service.ts` |
-| Voyager response parsing | eracle/linkedin-cli `api/voyager.py` + OpenOutreach test fixtures |
+| Goal | Start here (local path) |
+|------|------------------------|
+| Voyager REST endpoint reference | `docs/research/repos/linkedin-api/` → `DOCS.md` |
+| Modern dash + GraphQL employee dump | `docs/research/repos/LinkedInDumper/` → `linkedindumper.py` |
+| In-browser Voyager (most reliable HTTP) | `docs/research/repos/linkedin-mcp/` or `docs/research/repos/codyrobertson-linkedin-cli/` |
+| Production Playwright automation | `docs/research/repos/OpenOutreach/` + `docs/research/repos/eracle-linkedin-cli/` |
+| DOM scraping with session mgmt | `docs/research/repos/linkedin_scraper/` |
+| Resilient DOM without selectors | `docs/research/repos/linkedin-mcp-server/` |
+| Sales Navigator JSON interception | `docs/research/repos/linvo-scraper/` |
+| Voyager response parsing | `docs/research/repos/eracle-linkedin-cli/src/linkedin_cli/api/voyager.py` |
 
 ---
 

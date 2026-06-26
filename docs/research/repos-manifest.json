@@ -1,0 +1,181 @@
+[
+  {
+    "local_path": "docs/research/repos/LinkedInDumper",
+    "local_dir": "LinkedInDumper",
+    "github": "l4rm4nd/LinkedInDumper",
+    "url": "https://github.com/l4rm4nd/LinkedInDumper",
+    "category": "Dash + GraphQL employee dump",
+    "commit": "0ded335de344beb36a2404c75d2210442fea174f",
+    "cloned_at": "2026-04-18 01:05:24 +0000",
+    "key_files": [
+      "linkedindumper.py",
+      "README.md"
+    ]
+  },
+  {
+    "local_path": "docs/research/repos/OpenOutreach",
+    "local_dir": "OpenOutreach",
+    "github": "eracle/OpenOutreach",
+    "url": "https://github.com/eracle/OpenOutreach",
+    "category": "Production automation daemon",
+    "commit": "4e29945f2e70b9ce711a34736e3ed1bf92a8bfe5",
+    "cloned_at": "2026-06-23 13:39:25 +0100",
+    "key_files": [
+      "openoutreach/"
+    ]
+  },
+  {
+    "local_path": "docs/research/repos/codyrobertson-linkedin-cli",
+    "local_dir": "codyrobertson-linkedin-cli",
+    "github": "codyrobertson/linkedin-cli",
+    "url": "https://github.com/codyrobertson/linkedin-cli",
+    "category": "Voyager client + write plans",
+    "commit": "af6484c62498f9fde926bc6c6c7735a4257e99f6",
+    "cloned_at": "2026-04-21 13:43:50 -0700",
+    "key_files": [
+      "linkedin_cli/voyager.py"
+    ]
+  },
+  {
+    "local_path": "docs/research/repos/eracle-linkedin-cli",
+    "local_dir": "eracle-linkedin-cli",
+    "github": "eracle/linkedin-cli",
+    "url": "https://github.com/eracle/linkedin-cli",
+    "category": "Playwright in-browser Voyager",
+    "commit": "ce01c29578b46e581af349d3f9891f04fd688d94",
+    "cloned_at": "2026-06-11 19:41:50 +0100",
+    "key_files": [
+      "src/linkedin_cli/api/client.py",
+      "src/linkedin_cli/api/voyager.py"
+    ]
+  },
+  {
+    "local_path": "docs/research/repos/inb",
+    "local_dir": "inb",
+    "github": "joshiayush/inb",
+    "url": "https://github.com/joshiayush/inb",
+    "category": "linkedin-api fork + CLI",
+    "commit": "5b7a1f37342411ffa5b116dff52e368272ee9aea",
+    "cloned_at": "2025-03-24 19:01:25 +0530",
+    "key_files": [
+      "inb/api/client.py"
+    ]
+  },
+  {
+    "local_path": "docs/research/repos/linkedin-api",
+    "local_dir": "linkedin-api",
+    "github": "nsandman/linkedin-api",
+    "url": "https://github.com/nsandman/linkedin-api",
+    "category": "Classic Voyager REST client",
+    "commit": "c75a3cb4538de5a02d66251221096dd4b0d3a3de",
+    "cloned_at": "2019-07-24 20:48:32 -0700",
+    "key_files": [
+      "linkedin_api/client.py",
+      "linkedin_api/linkedin.py",
+      "DOCS.md"
+    ]
+  },
+  {
+    "local_path": "docs/research/repos/linkedin-mcp",
+    "local_dir": "linkedin-mcp",
+    "github": "Michaelrecycle/linkedin-mcp",
+    "url": "https://github.com/Michaelrecycle/linkedin-mcp",
+    "category": "In-browser Voyager API",
+    "commit": "5449d47ada8ecde5584a46ce399140c1aafc5613",
+    "cloned_at": "2026-05-25 16:10:11 +1000",
+    "key_files": [
+      "src/lib/linkedin.ts",
+      "src/config.ts"
+    ]
+  },
+  {
+    "local_path": "docs/research/repos/linkedin-mcp-server",
+    "local_dir": "linkedin-mcp-server",
+    "github": "stickerdaniel/linkedin-mcp-server",
+    "url": "https://github.com/stickerdaniel/linkedin-mcp-server",
+    "category": "Auth/Session + DOM innerText",
+    "commit": "e63c9aa5cdcef0689be028807ce591d5eb97058c",
+    "cloned_at": "2026-06-26 04:44:25 +0000",
+    "key_files": [
+      "linkedin_mcp_server/core/browser.py"
+    ]
+  },
+  {
+    "local_path": "docs/research/repos/linkedin-profile-scraper-api",
+    "local_dir": "linkedin-profile-scraper-api",
+    "github": "josephlimtech/linkedin-profile-scraper-api",
+    "url": "https://github.com/josephlimtech/linkedin-profile-scraper-api",
+    "category": "Puppeteer + pv-* selectors",
+    "commit": "9fc71258725bad7c1f3c146ce2d587fc7debdc4c",
+    "cloned_at": "2024-04-05 09:30:18 +0800",
+    "key_files": [
+      "src/index.ts"
+    ]
+  },
+  {
+    "local_path": "docs/research/repos/linkedin-scraping-tools",
+    "local_dir": "linkedin-scraping-tools",
+    "github": "ArthurVerrez/linkedin-scraping-tools",
+    "url": "https://github.com/ArthurVerrez/linkedin-scraping-tools",
+    "category": "Selenium Sales Nav + Recruiter",
+    "commit": "3f8e3f1be00a4497eedb2c16028c3fe885ddd804",
+    "cloned_at": "2023-08-22 14:52:50 +0200",
+    "key_files": [
+      "lksn_search_scraper.py",
+      "lkr_search_scraper.py"
+    ]
+  },
+  {
+    "local_path": "docs/research/repos/linkedin-voyager-sdk",
+    "local_dir": "linkedin-voyager-sdk",
+    "github": "trieb-work/linkedin-voyager-sdk",
+    "url": "https://github.com/trieb-work/linkedin-voyager-sdk",
+    "category": "TypeScript Voyager wrapper",
+    "commit": "7277cfccd7b1983c4873708f57ffd75e8d7e897c",
+    "cloned_at": "2021-02-16 13:24:46 +0100",
+    "key_files": [
+      "src/index.ts"
+    ]
+  },
+  {
+    "local_path": "docs/research/repos/linkedin_scraper",
+    "local_dir": "linkedin_scraper",
+    "github": "joeyism/linkedin_scraper",
+    "url": "https://github.com/joeyism/linkedin_scraper",
+    "category": "Playwright DOM scraping",
+    "commit": "b1cdc1c0e85bee8764d62565d229c682e5eb81bb",
+    "cloned_at": "2026-04-09 19:44:58 -0700",
+    "key_files": [
+      "linkedin_scraper/core/auth.py",
+      "linkedin_scraper/core/browser.py"
+    ]
+  },
+  {
+    "local_path": "docs/research/repos/linvo-scraper",
+    "local_dir": "linvo-scraper",
+    "github": "linvo-io/linvo-scraper",
+    "url": "https://github.com/linvo-io/linvo-scraper",
+    "category": "Puppeteer multi-action + Sales Nav",
+    "commit": "cfbe91080c7347591dee44a26f55d74bba734da2",
+    "cloned_at": "2024-12-12 00:20:18 +0700",
+    "key_files": [
+      "dist/linkedin.service.js",
+      "dist/linkedin.service.d.ts",
+      "dist/linkedin.service.js.map",
+      "dist/enums/linkedin.errors.js.map",
+      "dist/enums/linkedin.errors.js"
+    ]
+  },
+  {
+    "local_path": "docs/research/repos/scraping-linkedin-salesNavigator",
+    "local_dir": "scraping-linkedin-salesNavigator",
+    "github": "padmanabhan-s/scraping-linkedin-salesNavigator",
+    "url": "https://github.com/padmanabhan-s/scraping-linkedin-salesNavigator",
+    "category": "Basic Sales Nav Selenium",
+    "commit": "b9776c97231fe825628a2ecb00c3a5a6a7c720a1",
+    "cloned_at": "2020-05-22 16:04:45 +0530",
+    "key_files": [
+      "README.md"
+    ]
+  }
+]
